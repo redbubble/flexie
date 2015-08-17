@@ -1,0 +1,7 @@
+{
+  "name": "flexie",
+  "main": "src/flexie.js",
+  "ignore": [
+    "**/.*",
+  ]
+}
