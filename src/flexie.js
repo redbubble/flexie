@@ -1896,8 +1896,8 @@ var Flexie = (function (win, doc) {
 				flex = FLEX_BOXES[parent.FLX_DOM_ID];
 				
 				if (flex) {
-					cleanPositioningProperties(flex.nodes);
-					self.setup(flex.target, flex.nodes, flex);
+					cleanPositioningProperties(flex.children);
+					self.setup(flex.target, flex.children, flex);
 				}
 				
 				parent = parent.parentNode;
