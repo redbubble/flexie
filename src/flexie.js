@@ -1068,11 +1068,11 @@ var Flexie = (function (win, doc) {
 		
 		while (parent.FLX_DOM_ID) {
 			obj = FLEX_BOXES[parent.FLX_DOM_ID];
-			matrix = createMatchMatrix(obj.children, sanitizeChildren(parent, parent.childNodes), NULL);
-			
-			totalFlex += matrix.total;
-			isNested = TRUE;
-			
+			if(obj) {
+        matrix = createMatchMatrix(obj.children, sanitizeChildren(parent, parent.childNodes), NULL);
+        totalFlex += matrix.total;
+        isNested = TRUE;
+			}
 			parent = parent.parentNode;
 		}
 		
